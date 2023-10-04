@@ -1,0 +1,107 @@
+<html>
+
+  <head>
+   <title>XXI MUSIC HITS</title>
+   <link rel="stylesheet" href="XXIhits.css">
+   <script src="d3.v5.min.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+
+    <div style="width: 100%"> 
+      <div class = "header" id="main_title" style="float:left">
+        XXI Music Hits
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="dot2" id="info_title">&nbsp;&nbsp;?</span>
+       </div>
+      <div class = "header" id="info" style="float:right"></div> 
+    </div> <br> <br>
+    <hr>
+
+    <div style="width: 100%; height: 700px">
+      <div style="width: 33%; float:left;">
+       <div id="heat_map"   style="height: 50%"><br></div>
+       <div id="line_chart" style="height: 50%">
+          <br>
+          metric: <select id="selectline">
+            <option value="duration_ms">Duration (min)</option>
+            <option value="loudness">Loudness</option>
+            <option value="tempo">Tempo</option>
+            <option value="word_count">Word Count (K)</option>
+            <option value="energy" selected="selected">Energy</option>
+            <option value="acousticness">Acousticness</option>
+            <option value="danceability">Danceability</option>
+            <option value="liveness">Liveness</option>
+            <option value="speechiness"> Speechiness </option>
+            <option value="valence">Valence</option>
+            <option value="lex_complexity">Lexical Complexity</option>
+            <option value="key">Key</option>
+          </select>
+          <span class="dot" id="info_line"> &nbsp;&nbsp;?</span>
+
+       </div>
+    </div>
+
+    <div id="radial_plot"  style="width: 40%; float:left;">  
+       <span class="dot" id="info_radial"> &nbsp;&nbsp;?</span>
+       <br> <br> <br> <br> 
+     </div>
+
+    <div style="width: 25%;  float:right;">
+        <div id="scatter_plot"  style="height: 50%">   
+
+        x:
+        <select id="selectx" class="select">
+          <option value="duration_ms">Duration (min)</option>
+          <option value="loudness">Loudness</option>
+          <option value="tempo">Tempo</option>
+          <option value="word_count">Word Count (K)</option>
+          <option value="energy">Energy</option>
+          <option value="acousticness">Acousticness</option>
+          <option value="danceability">Danceability</option>
+          <option value="liveness">Liveness</option>
+          <option value="speechiness">Speechiness</option>
+          <option value="valence" selected="selected">Valence</option>
+          <option value="lex_complexity">Lexical Complexity</option>
+          <option value="key">Key</option>
+        </select>
+
+        y:
+        <select id="selecty" class="select">
+          <option value="duration_ms">Duration (min)</option>
+          <option value="loudness">Loudness</option>
+          <option value="tempo">Tempo</option>
+          <option value="word_count">Word Count (K)</option>
+          <option value="energy" selected="selected">Energy</option>
+          <option value="acousticness">Acousticness</option>
+          <option value="danceability">Danceability</option>
+          <option value="liveness">Liveness</option>
+          <option value="speechiness">Speechiness</option>
+          <option value="valence">Valence</option>
+          <option value="lex_complexity">Lexical Complexity</option>
+          <option value="key">Key</option>
+        </select> 
+
+        <span class="dot" id="info_scatter"> &nbsp;&nbsp;?</span>
+
+      </div>
+     
+      <div id="word_cloud"  style="height: 50%;">
+        <br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="btnsel" id="word" style="background-color: #111211">Top Words</span>
+        <span class="btnsel" id="artist">Top Artists</span>
+        <span class="btnsel" id="title">Top Hits</span> 
+        <span class="dot" id="info_cloud"> &nbsp;&nbsp;?</span>
+        <br> <br>
+      </div>    
+
+    </div>
+
+    </div>
+
+  </body>
+
+  <script src="XXIhits.js"></script>
+
+
+</html>

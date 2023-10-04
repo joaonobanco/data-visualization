@@ -1,0 +1,164 @@
+h1 { 
+   font-size: 20pt;
+   font-family: calibri, arial, sans serif;
+   color: white;
+}
+
+body {
+    background-color: black;
+    color:white;
+    font-family: calibri, arial, sans serif;
+  }
+
+#main_title.header{
+   font-family: fantasy;
+   font-size: 30px;
+
+}
+#info.header{
+   font-family: fantasy;
+   font-size: 20pt;
+}
+
+.axis text {
+   font-family: calibri, sans serif;
+   font-size: 10pt;
+}
+
+
+.btn {
+	width: 200px;
+	font-family: calibri, sans serif;
+	padding: 10px;
+	border: solid 1px black;
+	color: white;
+  background-color: grey;
+}
+
+.btnsel {
+  width: 100px;
+  height: 15px;
+  font-family: calibri, sans serif;
+  padding: 10px;
+  border: solid 1px black;
+  color: white;
+  background-color: grey;
+}
+
+
+.radial_axis line{
+  stroke: white;
+}
+
+.radial_axis path{
+  stroke: white;
+}
+.radial_axis text{
+  fill: white;
+}  
+
+.radial_axis line{
+  fill: white;
+}  
+
+div.tooltip_radial{ 
+    position: absolute;     
+    text-align: center;     
+    width: 50px;          
+    height: 15px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: gray; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+
+div.tooltip_cloud{ 
+    position: absolute;     
+    text-align: center;     
+    width: 100px;          
+    height: 15px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: gray; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+
+
+div.tooltip_scatter{ 
+    position: absolute;     
+    text-align: center;     
+    width: 200px;          
+    height: 40px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: gray; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+
+
+div.tooltip_heat{ 
+    position: absolute;     
+    text-align: center;     
+    width: 120px;          
+    height: 15px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: gray; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+
+div.tooltip_line{ 
+    position: absolute;     
+    text-align: center;     
+    width: 130px;          
+    height: 45px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: gray; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  float:right;
+}
+
+.dot2 {
+  height: 35px;
+  width: 35px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  float:right;
+}
+
+#select {
+  width: 100;
+  float: right;
+}
+
+.tooltip2{ 
+    position: absolute;     
+    text-align: center;     
+    width: 250px;          
+    height: 200px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: gray; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
